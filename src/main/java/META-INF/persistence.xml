@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="g2b" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<class>ba.go2balkan.model.accommodation.Accommodation</class>
+		<class>ba.go2balkan.model.accommodation.AccommodationPricesPeriod</class>
+		<class>ba.go2balkan.model.accommodation.AccommodationRoomBed</class>
+		<class>ba.go2balkan.model.accommodation.AccommodationRoomType</class>
+		<class>ba.go2balkan.model.accommodation.AccommodationRoom</class>
+		<class>ba.go2balkan.model.accommodation.Booking</class>
+		<class>ba.go2balkan.model.client.Client</class>
+		<class>ba.go2balkan.model.cb.CbLocation</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationActivity</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationBreakfastType</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationBusinessFacility</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationCleaningService</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationCommonArea</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationEntertainment</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationFoodDrink</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationFrontdeskService</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationMiscellaneous</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationPoolSpa</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationShop</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationStaffLanguage</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationTransportation</class>
+		<class>ba.go2balkan.model.cb.CbAccommodationType</class>
+		<class>ba.go2balkan.model.cb.CbAccountType</class>
+		<class>ba.go2balkan.model.cb.CbAgencyType</class>
+		<class>ba.go2balkan.model.cb.CbBedPreference</class>
+		<class>ba.go2balkan.model.cb.CbBookingStatus</class>
+		<class>ba.go2balkan.model.cb.CbCancellationPolicy</class>
+		<class>ba.go2balkan.model.cb.CbCityTaxType</class>
+		<class>ba.go2balkan.model.cb.CbClientClass</class>
+		<class>ba.go2balkan.model.cb.CbClientType</class>
+		<class>ba.go2balkan.model.cb.CbCreditCard</class>
+		<class>ba.go2balkan.model.cb.CbGrati</class>
+		<class>ba.go2balkan.model.cb.CbInternetConnectionLocation</class>
+		<class>ba.go2balkan.model.cb.CbInternetConnectionType</class>
+		<class>ba.go2balkan.model.cb.CbPaymentMode</class>
+		<class>ba.go2balkan.model.cb.CbRoomAmenity</class>
+		<class>ba.go2balkan.model.cb.CbRoomBathroom</class>
+		<class>ba.go2balkan.model.cb.CbRoomBedOption</class>
+		<class>ba.go2balkan.model.cb.CbRoomExtrabedClientType</class>
+		<class>ba.go2balkan.model.cb.CbRoomFoodDrink</class>
+		<class>ba.go2balkan.model.cb.CbRoomMediaTech</class>
+		<class>ba.go2balkan.model.cb.CbRoomOption</class>
+		<class>ba.go2balkan.model.cb.CbRoomOutdoorView</class>
+		<class>ba.go2balkan.model.cb.CbRoomService</class>
+		<class>ba.go2balkan.model.cb.CbRoomTypeName</class>
+		<class>ba.go2balkan.model.cb.CbRoomType</class>
+		<class>ba.go2balkan.model.cb.CbServiceAvailability</class>
+		<class>ba.go2balkan.model.cb.CbSurrounding</class>
+		<class>ba.go2balkan.model.cb.CbTaxe</class>
+		<class>ba.go2balkan.model.cb.CbVatRate</class>
+		<class>ba.go2balkan.model.accommodation.AccountOffice</class>
+		<class>ba.go2balkan.model.accommodation.Account</class>
+		<class>ba.go2balkan.model.accommodation.BookingCalendar</class>
+		<class>ba.go2balkan.model.accommodation.DiscountAge</class>
+		<class>ba.go2balkan.model.accommodation.DiscountClass</class>
+		<class>ba.go2balkan.model.accommodation.DiscountMiscellaneous</class>
+		<class>ba.go2balkan.model.accommodation.DiscountQuantity</class>
+		<class>ba.go2balkan.model.messages.Message</class>
+		<class>ba.go2balkan.model.messages.Notification</class>
+		<properties>
+			<property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/g2b"/>
+			<property name="javax.persistence.jdbc.user" value="root"/>
+			<property name="javax.persistence.jdbc.password" value="admin"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="eclipselink.target-database" value="MySQL"/>
+		</properties>
+
+	</persistence-unit>
+</persistence>
